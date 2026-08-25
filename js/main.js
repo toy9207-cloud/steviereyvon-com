@@ -9,6 +9,24 @@
   var yr = document.getElementById("yr");
   if (yr) yr.textContent = new Date().getFullYear();
 
+  /* ---- copy email (for visitors without a mail app) ---- */
+  var copyBtn = document.getElementById("copyEmail");
+  if (copyBtn) {
+    copyBtn.addEventListener("click", function () {
+      var email = copyBtn.getAttribute("data-email");
+      function done() {
+        copyBtn.classList.add("copied");
+        copyBtn.textContent = "Copied!";
+        setTimeout(function () { copyBtn.classList.remove("copied"); copyBtn.textContent = "Copy email"; }, 2200);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(done, function () { window.prompt("Copy the email address:", email); });
+      } else {
+        window.prompt("Copy the email address:", email);
+      }
+    });
+  }
+
   /* ---- sticky header ---- */
   var header = document.getElementById("siteHeader");
   function onScroll() {
