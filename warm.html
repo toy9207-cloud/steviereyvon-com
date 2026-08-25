@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="css/styles.css?v=14" />
+<link rel="stylesheet" href="css/styles.css?v=15" />
 <link rel="preload" as="image" href="assets/img/hero-warm.jpg" />
 
 <!-- ============ Structured data ============ -->
@@ -396,7 +396,7 @@
     </div>
     <div class="stand-grid">
       <div class="fee-card reveal">
-        <span class="eyebrow" style="color:var(--gold);">2026 Breeding Fee</span>
+        <span class="eyebrow" style="color:var(--gold);">2027 Breeding Fee</span>
         <div class="fee gold-text" style="margin-top:1rem;"><span class="d">$</span>10,000</div>
         <div class="terms">+ Chute Fee · Six-Panel N/N</div>
         <div class="fee-second">ICSI Fee — <strong>$9,000</strong> + Chute Fee</div>
@@ -424,13 +424,22 @@
   <div class="wrap inquire-inner reveal">
     <span class="eyebrow">Breeding Inquiries</span>
     <h2 class="display-lg" style="margin:1rem 0 1rem;">Let's create the next champion.</h2>
-    <p class="stone" style="font-size:1.15rem;">Bookings for the 2026 season are limited. Email the Theorem Ranch breeding office to reserve your contract.</p>
-    <a href="mailto:steviereyvon12@gmail.com?subject=Stevie%20Rey%20Von%20Breeding%20Inquiry" class="btn btn-dark">Request a Contract <span class="arrow">&rarr;</span></a>
-    <div class="inquire-email">
-      <a href="mailto:steviereyvon12@gmail.com?subject=Stevie%20Rey%20Von%20Breeding%20Inquiry" class="email-big">steviereyvon12@gmail.com</a>
-      <button type="button" class="copy-email" id="copyEmail" data-email="steviereyvon12@gmail.com">Copy email</button>
-    </div>
-    <div class="contact-line"><a href="tel:+18066726039">806&middot;672&middot;6039</a></div>
+    <p class="stone" style="font-size:1.15rem;">Bookings for the 2027 season are limited. The 2026 book is closed. Request your contract below and the Theorem Ranch breeding office will be in touch.</p>
+    <form class="inquire-form" name="breeding-inquiry" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="breeding-inquiry" />
+      <p class="hp-field" aria-hidden="true"><label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+      <div class="form-row">
+        <label>Name<input type="text" name="name" required autocomplete="name" /></label>
+        <label>Email<input type="email" name="email" required autocomplete="email" /></label>
+      </div>
+      <div class="form-row">
+        <label>Phone<input type="tel" name="phone" autocomplete="tel" /></label>
+        <label>Mare's Name<input type="text" name="mare" /></label>
+      </div>
+      <label class="form-full">Tell us about your mare (pedigree, discipline, earnings)<textarea name="message" rows="4"></textarea></label>
+      <button type="submit" class="btn btn-dark">Request a Contract <span class="arrow">&rarr;</span></button>
+    </form>
+    <div class="contact-line">Prefer direct? <a href="tel:+18066726039">806&middot;672&middot;6039</a> &middot; <a href="mailto:steviereyvon12@gmail.com">steviereyvon12@gmail.com</a></div>
   </div>
 </section>
 </main>
@@ -471,6 +480,6 @@
 <script id="earnings-data" type="application/json">
 {"total":29295975,"asOf":"2026-08-25","moneyEarners":867,"foals":2327,"worldChampions":3,"aqhaPoints":2534,"history":[{"date":"2025-08-04","total":19000000},{"date":"2025-09-20","total":20548373},{"date":"2025-11-24","total":22000000},{"date":"2026-03-15","total":25200000},{"date":"2026-07-03","total":28027815},{"date":"2026-08-25","total":29295975}]}
 </script>
-<script src="js/main.js?v=14"></script>
+<script src="js/main.js?v=15"></script>
 </body>
 </html>
