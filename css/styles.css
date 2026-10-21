@@ -449,6 +449,55 @@ body.menu-open .menu-toggle span:nth-child(3){ top:10px; transform: rotate(-45de
 .video-frame video { display: block; width: 100%; border-radius: 2px; background: #000; box-shadow: 0 24px 70px rgba(0,0,0,.18); }
 
 /* ============================================================
+   2027 THEOREM RANCH INCENTIVE
+   ============================================================ */
+#incentive .inc-head { text-align: center; max-width: 780px; margin: 0 auto 3rem; }
+.inc-seal { width: min(160px, 38vw); height: auto; display: block; margin: 0 auto 1.6rem; filter: drop-shadow(0 10px 28px rgba(0,0,0,.18)); }
+#incentive .inc-head .lede { margin-top: 1.4rem; }
+.inc-h3 { font-family: var(--display); font-weight: 500; font-size: clamp(1.5rem, 2.6vw, 2rem);
+          color: var(--text-dark); margin: 3.2rem 0 1.1rem; text-align: center; }
+.inc-intro { color: var(--stone-d); text-align: center; max-width: 640px; margin: 0 auto 1.6rem; }
+.inc-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; max-width: 980px; margin: 0 auto; }
+.inc-step { border: 1px solid var(--gold-line); border-radius: 2px; padding: 1.6rem 1.4rem;
+            background: var(--cream); }
+.inc-step-n { font-family: var(--display); font-size: 2rem; color: var(--gold-deep); display: block; margin-bottom: .5rem; }
+.inc-step p { color: var(--stone-d); line-height: 1.55; }
+.inc-step strong, .inc-callout strong, .inc-body strong { color: var(--text-dark); }
+.inc-callout { max-width: 980px; margin: 1.6rem auto 0; border-left: 3px solid var(--gold-deep);
+               background: var(--bone-2); padding: 1.3rem 1.6rem; }
+.inc-callout p { color: var(--stone-d); font-size: 1.08rem; line-height: 1.6; }
+.inc-table-box { max-width: 980px; margin: 0 auto; overflow-x: auto; border: 1px solid var(--gold-line);
+                 border-radius: 2px; background: var(--cream); }
+.inc-table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: .98rem; }
+.inc-table th, .inc-table td { padding: .9rem 1rem; text-align: right; border-bottom: 1px solid var(--gold-line); }
+.inc-table thead th { font-family: var(--sans); font-size: .6rem; letter-spacing: .2em;
+                      text-transform: uppercase; color: var(--gold-deep); }
+.inc-table th[scope="row"] { text-align: left; color: var(--text-dark); font-weight: 500; }
+.inc-table td { color: var(--stone-d); font-variant-numeric: tabular-nums; }
+.inc-table td:nth-child(2) { color: var(--gold-deep); font-weight: 600; }
+.inc-table tbody tr:last-child th, .inc-table tbody tr:last-child td { border-bottom: 0; }
+.inc-body { max-width: 760px; margin: 0 auto; color: var(--stone-d); line-height: 1.7; }
+.inc-body p, .inc-body ul, .inc-body ol { margin-bottom: 1rem; }
+.inc-body ul, .inc-body ol { padding-left: 1.3rem; }
+.inc-body li { margin-bottom: .45rem; }
+.inc-faqs { max-width: 760px; margin: 0 auto; }
+.inc-subhead { font-family: var(--sans); font-size: .62rem; letter-spacing: .24em; text-transform: uppercase;
+               color: var(--gold-deep); margin: 2.2rem 0 .7rem; }
+.inc-faq { border-bottom: 1px solid var(--gold-line); }
+.inc-faq summary { cursor: pointer; padding: .95rem 1.8rem .95rem 0; color: var(--text-dark);
+                   font-size: 1.06rem; font-weight: 500; list-style: none; position: relative; }
+.inc-faq summary::-webkit-details-marker { display: none; }
+.inc-faq summary::after { content: "+"; position: absolute; right: .2rem; top: 50%; transform: translateY(-50%);
+                          color: var(--gold-deep); font-family: var(--display); font-size: 1.3rem; transition: transform .3s; }
+.inc-faq[open] summary::after { content: "\2013"; }
+.inc-faq-a { padding: 0 0 1.1rem; color: var(--stone-d); line-height: 1.65; }
+.inc-faq-a ul { padding-left: 1.3rem; }
+.inc-faq-a li { margin-bottom: .4rem; }
+.inc-fine { max-width: 760px; margin: 3rem auto 0; font-size: .82rem; line-height: 1.65; color: var(--stone); }
+.inc-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2.2rem; }
+@media (max-width: 760px) { .inc-steps { grid-template-columns: 1fr; } }
+
+/* ============================================================
    WELCOME HOME
    ============================================================ */
 .welcome-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
