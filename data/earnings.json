@@ -1,19 +1,19 @@
 {
-  "total": 30582565,
-  "asOf": "2026-10-21",
+  "total": 31237299,
+  "asOf": "2026-10-22",
   "source": "AQHA QStallions \u2014 Stevie Rey Von Sire Report",
   "sourceUrl": "https://qstallions.com/Report?id=549&which=5",
   "note": "Includes NCHA weekend money. Figures refresh weekly from AQHA QStallions.",
-  "moneyEarners": 921,
+  "moneyEarners": 929,
   "foals": 2392,
   "worldChampions": 3,
   "reserveWorldChampions": 1,
   "aqhaPoints": 2534,
   "romAwards": 44,
   "disciplines": {
-    "Cutting": 24595143,
-    "Reined Cow Horse": 4416390,
-    "Roping": 1367127,
+    "Cutting": 25038275,
+    "Reined Cow Horse": 4419358,
+    "Roping": 1577327,
     "Ranch": 159909
   },
   "history": [
@@ -60,6 +60,10 @@
     {
       "date": "2026-10-21",
       "total": 30582565
+    },
+    {
+      "date": "2026-10-22",
+      "total": 31237299
     }
   ]
 }
